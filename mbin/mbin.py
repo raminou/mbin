@@ -134,10 +134,10 @@ def main(args: argparse.Namespace):
         float_number = to_float(number, bitsize)
         print(colored("Float%02d:" % bitsize, attrs=['underline'])  + " " * (0 + 0) + ("{0: >%d}" % (32)).format(float_number))
 
-def main_with_parse():
+def main_with_args():
     args = parse_args()
     main(args)
 
 if(__name__ == '__main__'):
-    main_with_parse()
+    main_with_args()
 
