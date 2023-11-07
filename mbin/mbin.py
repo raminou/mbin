@@ -130,7 +130,7 @@ def main(args: argparse.Namespace):
     print(colored("Hexa:", attrs=['underline']) + " " * (3 + 0) + ("{0: >%d}" % (32)).format(hexa_number))
     int_number = int_with_space(number)
     print(colored("Int:", attrs=['underline'])  + " " * (4 + 0) + ("{0: >%d}" % (32)).format(int_number))
-    if(bitsize > 16):
+    if(bitsize >= 16):
         float_number = to_float(number, bitsize)
         print(colored("Float%02d:" % bitsize, attrs=['underline'])  + " " * (0 + 0) + ("{0: >%d}" % (32)).format(float_number))
 
